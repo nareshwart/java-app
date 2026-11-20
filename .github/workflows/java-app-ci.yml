@@ -167,7 +167,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: surefire-html-report
-          path: target/site/
+          path: target/reports/
       - name: Upload Tested Workspace
         uses: actions/upload-artifact@v7
         with:
@@ -292,7 +292,7 @@ jobs:
             <h1>IT Services Portal Reports</h1>
             <ul>
               <li><a href="./checkstyle/checkstyle.html">Checkstyle report</a></li>
-              <li><a href="./tests/surefire-report.html">Unit test report</a></li>
+              <li><a href="./tests/surefire.html">Unit test report</a></li>
               <li><a href="./jacoco/index.html">JaCoCo coverage report</a></li>
             </ul>
           </body>
@@ -323,7 +323,7 @@ jobs:
               "## Published reports",
               "",
               f"- [Checkstyle HTML report]({page_url}/checkstyle/checkstyle.html)",
-              f"- [Unit test HTML report]({page_url}/tests/surefire-report.html)",
+              f"- [Unit test HTML report]({page_url}/tests/surefire.html)",
               f"- [JaCoCo coverage report]({page_url}/jacoco/)",
           ]
 
